@@ -49,8 +49,14 @@ int main() {
     vl arr = {12, 11, 13, 5, 6, 7};
     ll n = arr.size();
 
+    cout << "Input Array: \n";
+    for(ll i = 0; i < n; i++)
+        cout << arr[i] << " ";
+    cout << "\n";
+    
     mergeSort(arr, 0, n - 1);
 
+    cout << "Sorted array: \n";
     for(ll i = 0; i < n; i++)
         cout << arr[i] << " ";
     cout << "\n";

@@ -28,8 +28,14 @@ void quickSort(vl &arr, ll low, ll high) {
 int main() { 
     vl arr = {10, 7, 8, 9, 1, 5};
 
+    cout << "Input Array: \n";
+    for(ll i = 0; i < arr.size(); i++)
+        cout << arr[i] << " ";
+    cout << "\n";
+
     quickSort(arr, 0, arr.size() - 1);
 
+    cout << "Sorted array: \n";
     for(ll i = 0; i < arr.size(); i++)
         cout << arr[i] << " ";
     cout << "\n";
